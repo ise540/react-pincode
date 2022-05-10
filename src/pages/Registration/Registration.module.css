@@ -1,0 +1,37 @@
+.pageContent {
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.saveButton {
+    display: block;
+    width:100%;
+    border:none;
+    background-color: rgb(109, 4, 78);
+    font-size: 30px;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px
+}
+
+.saveButton:hover {
+    background-color: rgb(172, 11, 123);
+}
+
+
+.input {
+    width: 300px;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid #968d8d;
+    margin: 10px 2px ;
+    border-radius: 3px;
+}
