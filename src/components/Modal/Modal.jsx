@@ -9,14 +9,6 @@ export default function Modal({ children, visible, setVisible, ...props }) {
     modalClass.push(classes.modal_active);
   }
 
-  const closeButtonStyle = {
-    position: 'absolute',
-    top: '5px',
-    right:'10px',
-    fontSize: '35px',
-    cursor: 'pointer'
-  }
-
   return (
     <div
       className={modalClass.join(" ")}
@@ -31,7 +23,7 @@ export default function Modal({ children, visible, setVisible, ...props }) {
           e.stopPropagation();
         }}
       >
-        <CloseButton className={classes.closeButton} onClick={()=>setVisible(false)} style={closeButtonStyle}/>
+        <CloseButton className={classes.closeButton} onClick={()=>setVisible(false)}/>
         {children}
       </div>
     </div>
